@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="lang-container">
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+        <div class="register-card">
+            <h2 data-i18n="registerTitle">Create New Account</h2>
+            <div class="msg" id="msg"></div>
+            <form >
+                <input type="text" id="firstName"  placeholder="First Name" required  data-i18n="firstNamePlaceholder"><br>
+                <input type="text" id="lasttName"  placeholder="Last Name" required data-i18n="lastNamePlaceholder"><br>
+                <input type="email" id="email"  placeholder="userName@gmail.com" required data-i18n="emailPlaceholder"><br>
+                <input type="password" id="password"  placeholder="*******" required data-i18n="passwordPlaceholder"><br>
+                <input type="submit" value="Register"  id="button" data-i18n="registerBtn">
+            </form>
+            <div class="login-link">
+                <span data-i18n="alreadyRegistered">Already registered?</span>
+                <a href="login.html" data-i18n="loginBtn">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="./javaScript/translations.js"></script>
+<script src="./javaScript/register.js"></script>
+
+</body>
+</html>

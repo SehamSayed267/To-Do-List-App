@@ -1,0 +1,88 @@
+:root{
+    --background:#000430;
+    --seconsaryBackground:#171c48;
+    --text:#fff;
+    --purple:#828dff;
+    --teal:#24feee;
+    --red:#ff0000; 
+    --login-card:#272b4f;
+} 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    height:100vh; 
+    background:var(--background); 
+}
+.lang-container {
+    position: fixed;
+    top: 10px;      
+    right: 10px; 
+    margin: 20px auto 10px auto;
+}
+#languageSwitcher {
+    background: var(--seconsaryBackground);
+    color: var(--text);
+    border: 1px solid var(--purple);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#languageSwitcher:hover {
+    background: var(--purple);
+}
+.login-card { 
+    background:var(--login-card); 
+    color: var(--text);
+    padding:24px; 
+    border-radius:10px; 
+    width:320px; 
+}
+h2 { 
+    text-align:center; 
+    margin-bottom:14px; 
+}
+.msg { 
+    color:var(--red); 
+    min-height:20px; 
+    font-size:14px;
+}
+input { 
+    width:100%; 
+    padding:10px; 
+    margin:8px 0; 
+    box-sizing:border-box;
+    border-radius:6px; 
+    border: none;
+    outline: none;
+}
+#button { 
+    width:100%; 
+    padding:10px; 
+    margin-top:10px; 
+    cursor:pointer; 
+    border: none; 
+    background:var(--purple); 
+    color:var(--text);
+    border-radius:6px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+.register-link{
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center;
+    margin-top:10px; 
+}
+.register-link a{
+    text-decoration: none;
+    color: var(--teal);
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
+

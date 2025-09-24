@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="lang-container">
+            <select id="langSelect">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+        <div class="todo-container">
+            <h1 data-i18n="todoTitle" >My ToDo List</h1>
+            <div class="task-msg" id="task-msg" ></div>
+            <form>
+                <input id="input-task" type="text" data-i18n="taskPlaceholder" placeholder="write your task">
+                <button id="task-add-btn" type="submit">+</button>
+            </form>
+        </div>
+        <ul id="tasksList"></ul> 
+        <button id="logout-btn" data-i18n="logoutBtn" >Log Out</button> 
+    </div>
+    
+<script src="./javaScript/translations.js"></script>
+<script src="./javaScript/home.js"></script>
+
+
+</body>
+</html>

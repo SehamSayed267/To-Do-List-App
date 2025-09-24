@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lang-container">
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+        <div class="login-card">
+            <h2 data-i18n="loginTitle">Login</h2>
+            <div class="msg" id="msg"></div>
+            <form id="loginForm">
+                <input id="email" type="email"  placeholder="userName@gmail.com" required data-i18n="emailPlaceholder"><br>
+                <input id="password" type="password"  placeholder="*******" required data-i18n="passwordPlaceholder"><br>
+                <input type="submit" value="Login"  id="button" data-i18n="loginBtn">
+            </form>
+            <div class="register-link">
+                <span data-i18n="dontHaveAccount">Don’t have an account?</span>
+                <a href="register.html" data-i18n="registerBtn">Register</a>
+            </div>
+        </div>
+    </div>
+
+<script src="./javaScript/translations.js"></script>
+<script src="./javaScript/login.js"></script>
+
+</body>
+</html>
