@@ -41,7 +41,15 @@ class Register {
         localStorage.setItem("users", JSON.stringify(users));
 
         localStorage.setItem("currentUserEmail", email);
+
+        let allTasks = JSON.parse(localStorage.getItem("tasks")) || {};
+        if (!allTasks[email]) {
+            allTasks[email] = [];
+        }
+        localStorage.setItem("tasks", JSON.stringify(allTasks));
+
         window.location.href = "home.html";
+
     }
 
     showMessage(key) {
